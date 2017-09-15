@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="909a41a4-7955-4b5b-86e0-5ddef70725b3" version="1">
+  	<Properties>
+  		<Name>No Barbarian Mode Compatible Boosts and Policies</Name>
+  		<Description>Changed Boosts and Policies that are not possible in No Barbarian Mode to make them possible to trigger.</Description>
+  		<Teaser>Changed the requirements for Bronze Working Eureka and Military Tradition Inspiration to make them possible in No Barbarian Mode. Changed the Discipline policy card.</Teaser>
+  		<Authors>KonatsuSV</Authors>
+  		<SpecialThanks>Juri Kimura, RFormica</SpecialThanks>
+  	</Properties>
+    <FrontEndActions>
+      <UpdateText id="ConfigText">
+        <File>NoBarbsBoostsText.sql</File>
+      </UpdateText>
+    </FrontEndActions>
+    <InGameActions>
+      <UpdateDatabase id="Gameplay">
+        <File>NoBarbsBoosts.sql</File>
+      </UpdateDatabase>
+      <UpdateText id="Text">
+        <File>NoBarbsBoostsText.sql</File>
+      </UpdateText>
+    </InGameActions>
+  	<Files>
+        <File>NoBarbsBoosts.sql</File>
+  		  <File>NoBarbsBoostsText.sql</File>
+  	</Files>
+</Mod>
